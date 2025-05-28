@@ -15,7 +15,11 @@ export interface User {
 export class UserService {
   //private apiUrl = 'http://localhost:3000/api/users';
   
-  private apiUrl = 'http://52.45.120.140:3000/api/users';
+  //private apiUrl = 'http://52.45.120.140:3000/api/users';
+
+  private apiUrl = 'http://backend-lb22-903442946.us-east-1.elb.amazonaws.com/api/users';
+
+  
 
   constructor(private http: HttpClient) { }
 
